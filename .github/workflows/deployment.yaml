@@ -3,7 +3,7 @@ on:
    workflow_dispatch:
              branches: [master]
 jobs:
-  checkout-job:
+   dockerjob:
      runs-on: ubuntu-latest
      steps:
         - uses: actions/checkout@v4
