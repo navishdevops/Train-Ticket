@@ -1,6 +1,6 @@
 name: dockerci-cd
 on:
-   workflow_dispatch:
+   push:
          branch: [master]
 jobs:
   dockerjob:
