@@ -1,6 +1,6 @@
 name: dockerci-cd
 on:
-   workflow_dispatch
+   workflow_dispatch:
 jobs:
   dockerjob:
     name: deployment
