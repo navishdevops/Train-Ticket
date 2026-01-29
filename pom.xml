@@ -7,36 +7,32 @@
     <groupId>TrainBook</groupId>
     <artifactId>TrainBook</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>jar</packaging> <!-- Changed from war to jar -->
+    <packaging>jar</packaging>
 
     <properties>
-        <java.version>17</java.version> <!-- Modern JDK -->
-        <spring.boot.version>3.3.0</spring.boot.version> <!-- Adjust if needed -->
+        <java.version>17</java.version>
+        <spring.boot.version>3.3.0</spring.boot.version>
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Starter Web (for REST endpoints) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
 
-        <!-- PostgreSQL driver -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.3.7</version>
         </dependency>
 
-        <!-- MySQL driver -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.28</version>
         </dependency>
 
-        <!-- Servlet API (optional if using Spring Boot starter web) -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -47,7 +43,7 @@
 
     <build>
         <plugins>
-            <!-- Spring Boot Maven Plugin: creates executable JAR -->
+            <!-- Spring Boot Maven Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -61,7 +57,7 @@
                 </executions>
             </plugin>
 
-            <!-- Maven Compiler Plugin -->
+            <!-- Compiler Plugin -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
