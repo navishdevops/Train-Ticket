@@ -46,7 +46,7 @@
     </dependencies>
 
     <build>
-        <!-- Point to your existing src folder -->
+        <!-- Point Maven to your src folder -->
         <sourceDirectory>src</sourceDirectory>
 
         <resources>
@@ -74,6 +74,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <mainClass>com.shashi.TrainBookApplication</mainClass>
                 </configuration>
