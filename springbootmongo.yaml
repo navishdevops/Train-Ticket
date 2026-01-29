@@ -60,9 +60,9 @@ spec:
     spec:
       containers:
       - name: springappcontainer
-        image: jk2425/trainticket:${BUILD_NUMBER}
+        image: jk2425/trainticket:IMAGE_TAG
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
         env:
         - name: MONGO_DB_USERNAME
           valueFrom:
@@ -86,7 +86,7 @@ spec:
     app: springapp
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 8081
   type: NodePort
 ---
 # Mongo db pod with volumes(HostPath)
