@@ -60,7 +60,7 @@ spec:
     spec:
       containers:
       - name: springappcontainer
-        image: jk2425/trainticket:20
+        image: jk2425/trainticket:${BUILD_NUMBER}
         ports:
         - containerPort: 8080
         env:
